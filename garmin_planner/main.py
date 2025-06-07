@@ -42,7 +42,7 @@ def createWorkoutStep(step: dict, stepCount: list):
         parsedStep, numIteration = parse_bracket(stepName)
         match parsedStep:
             case "run":
-                stepType = StepType.WARMUP
+                stepType = StepType.INTERVAL
             case "warmup":
                 stepType = StepType.WARMUP
             case "cooldown":
